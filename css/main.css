@@ -186,7 +186,8 @@ section {
 .banner {
     margin: 55px 15px;
     width: 100%;
-    border: 1px solid #a0a0a0;
+    border-top: 1px solid #a0a0a0;
+    border-bottom: 1px solid #a0a0a0;
     padding: 25px 0;
 }
 
@@ -202,10 +203,10 @@ section {
     text-align: center;
 }
 
-.banner-text :last-child > div {
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 5px;
+banner-text > div:last-child { 
+    font-size: 16px; 
+    font-weight: 400; 
+    margin-top: 5px; 
 }
 
 .category {
@@ -224,7 +225,7 @@ section {
     text-align: center;
 }
 
-.category-text div {
+.category-text > div {
     font-size: 16px;
     font-weight: 200;
     color: #faa541;
