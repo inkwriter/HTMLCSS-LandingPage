@@ -271,11 +271,11 @@ section {
 }
 
 .full-banner-sidebar h4 {
-    flex: 0 0 41.666667%;
-    background-color: #364147;
-    text-transform: uppercase;
-    padding: 30px;
-    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    color: #637f94;
+    font-style: italic;
+    line-height: 1;
 }
 
 .full-banner-sidebar h4 :after {
