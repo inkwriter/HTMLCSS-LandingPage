@@ -308,24 +308,28 @@ section {
 
 footer {
     display: flex;
-    flex-wrap: wrap;
+    background-color: #000000;
     position: relative;
     z-index: 0;
-    height: 330px;
-    background-color: black;
+    min-height: 330px;
+    flex-wrap: wrap;
 }
 
-footer::after {
+footer:after {
     content: "";
     background-color: #a0a0a0;
     width: 75%;
-    position: absolute 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: -1;
 }
 
-.lists {
-    display: flex 0 0 75%;
-    
+.lists { 
+    flex: 0 0 75%; 
+    padding: 40px 15px; 
 }
 
 .link-header {
@@ -346,52 +350,23 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.social ul li {
-    display: inline-block;
-}
-
-.social ul li a {
-    display: block;
-    width: 23px;
-    height: 23px;
-    background-size: 23px;
-    position: 23px center;
-}
-
-.twitter {
-    background-image: url(images/twitter.svg);
-}
-
-.facebook {
-    background-image: url(images/facebook.svg);
-}
-
-.instagram {
-    background-image: url(images/instagram.svg);
-}
-
-.pinterest {
-    background-image: url(images/pinterest.svg);
-}
-
-.newsletter .link-header{
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 5px;
+.newsletter .link-header { 
+    font-size: 12px; 
+    font-weight: 400; 
+    margin-bottom: 5px; 
 }
 
 .newsletter .link-subheader {
     font-style: italic;
-    size: 12px;
+    font-size: 12px;
     font-weight: 400;
     margin-bottom: 15px;
 }
 
-.newsletter input {
-    border: 1px solid #364147;
-    width: 200px;
-    margin-bottom: 10px;
-}
+.newsletter input { 
+    border: 1px solid #364147; 
+    width: 200px; 
+    margin-bottom: 10px; }
 
 .newsletter button {
     width: 150px;
@@ -400,12 +375,45 @@ footer a:hover {
     letter-spacing: 1px;
 }
 
+.social ul li {
+    display: inline-block;
+}
+
+.social ul li a {
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-size: 23px 23px;
+    background-position: center;
+}
+
+.twitter { 
+    background-image: url('../img/twitter.svg'); 
+}
+
+.facebook { 
+    background-image: url('../img/facebook.svg'); 
+}
+
+.instagram { 
+    background-image: url('../img/instagram.svg'); 
+}
+
+.pinterest { 
+    background-image: url('../img/pinterest.svg'); 
+}
+
+
+
 .ps {
-    flex: 0 0 25;
     padding: 40px 0;
     color: #e5e5e5;
     font-size: 16px;
-    max-width: 230px;
+    flex: 0 0 25%;
+}
+
+.ps img { 
+    max-width: 230px; 
 }
 
 .demo {
